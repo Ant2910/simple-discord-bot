@@ -118,7 +118,7 @@ async def joke(ctx):
     else:
         await ctx.send("There was a problem.")
 
-# Command: meme gibt ein Meme zurück
+# Command: meme gives you a random meme from the api
 @bot.command()
 async def meme(ctx):
     response = requests.get(MEME_API_URL) # Sends a request with the requests modul to get a meme from the api
